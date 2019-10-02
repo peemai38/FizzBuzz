@@ -1,17 +1,19 @@
 package TDD;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.Scanner;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+public class FizzBuss {
 
-class FizzBuss {
-
-	@Test
-	@DisplayName("input 1 : expect 1")
-	void TC01() {	
-		int input =0;
-		assertEquals(1, input);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		int input = keyboard.nextInt();
+		System.out.println(input);
+		int output = getinput(input);
+	}
+	
+	public static int getinput(int i) {
+		return i;
 	}
 
 }
