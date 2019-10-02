@@ -7,18 +7,25 @@ import org.junit.jupiter.api.Test;
 
 class TestFizzBuss {
 	FizzBuss fizzbuss = new FizzBuss();
-	int input = fizzbuss.getinput(1);
-	int input2 = fizzbuss.getinput(2);
+	String input = fizzbuss.getinput(1);
+	String input2 = fizzbuss.getinput(2);
+	String input3 = fizzbuss.getinput(3);
 	
 	@Test
 	@DisplayName("input 1 : expect 1")
 	void TC01() {	
-		assertEquals(1, input);
+		assertEquals("1", input);
 	}
 	
 	@Test
 	@DisplayName("input 2 : expect 2")
 	void TC02() {	
-		assertEquals(2, input2);
+		assertEquals("2", input2);
+	}
+	
+	@Test
+	@DisplayName("input 3 : expect Fizz")
+	void TC03() {	
+		assertEquals("Fizz", input3);
 	}
 }

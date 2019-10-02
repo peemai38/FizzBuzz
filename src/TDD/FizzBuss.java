@@ -9,11 +9,16 @@ public class FizzBuss {
 		Scanner keyboard = new Scanner(System.in);
 		int input = keyboard.nextInt();
 		System.out.println(input);
-		int output = getinput(input);
+		String output = getinput(input);
 	}
 	
-	public static int getinput(int i) {
-		return i;
+	public static String getinput(int i) {
+		if(i%3==0) {
+			return "Fizz";
+		}
+		else{
+			return Integer.toString(i);
+		}
 	}
 
 }
