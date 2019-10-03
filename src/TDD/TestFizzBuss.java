@@ -13,6 +13,7 @@ class TestFizzBuss {
 	String input4 = fizzbuss.getinput(4);
 	String input5 = fizzbuss.getinput(5);
 	String input6 = fizzbuss.getinput(6);
+	String input7 = fizzbuss.getinput(7);
 	
 	@Test
 	@DisplayName("input 1 : expect 1")
@@ -48,5 +49,11 @@ class TestFizzBuss {
 	@DisplayName("input 6 : expect Fizz")
 	void TC06() {	
 		assertEquals("Fizz", input6);
+	}
+	
+	@Test
+	@DisplayName("input 7 : expect 7")
+	void TC07() {	
+		assertEquals("7", input7);
 	}
 }
